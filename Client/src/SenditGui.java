@@ -1,6 +1,8 @@
 //package Sendit;
 
 import javax.swing.*;
+import java.io.*;
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -41,7 +43,9 @@ public class SenditGui
             {
                 ChooseFile cf = new ChooseFile(); //choose file class
                 try{
-                    cf.PickFile();
+
+                    File file = cf.PickFile();
+                    //client.sendMessage(file);
                 }catch (Exception e){
                     e.printStackTrace();
                 }

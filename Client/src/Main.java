@@ -19,8 +19,7 @@ public class Main {
         Client c = new Client("localhost", 12345);
         Thread client = new Thread(c);
         client.start();
-        SenditGui g = new SenditGui(c);
-        g.homegGui();
+        LoginWindow g = new LoginWindow(c);
         //GUI menu = new GUI(address.getHostAddress());
         //menu.DisplayMenu();
     }
